@@ -1,0 +1,49 @@
+.title {
+  position: absolute;
+  top: 0;
+  text-decoration: none;
+  color: #f9fafa;
+  font-family: "Dancing Script", cursive;
+  font-size: 36px;
+  z-index: 1;
+
+  & h1 {
+    margin: 0 0 0 7rem;
+    line-height: normal;
+  }
+}
+
+.nav {
+  width: 100vw;
+  background-color: rgb(47, 47, 46);
+  position: fixed;
+  top: 0;
+  transition: opacity 0.3s;
+  opacity: 0;
+
+  &.scrolled {
+    opacity: 1;
+  }
+
+  &__content {
+    padding: 0rem 2rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 1rem 5rem;
+
+    &__anchors {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      list-style: none;
+
+      &__link {
+        text-decoration: none;
+        color: #f9fafa;
+        font-family: "Playfair Display", serif;
+        font-size: 22px;
+      }
+    }
+  }
+}

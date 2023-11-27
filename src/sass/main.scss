@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora&family=Playfair+Display&display=swap");
+
+@import "../components/Header/Header.scss";
+@import "../components/Nav/Nav.scss";
+@import "../components/Banner/Banner.scss";
+
+html,
+body {
+  background-color: #f9fafa;
+  color: #20303c;
+  font-family: "Lora", serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
