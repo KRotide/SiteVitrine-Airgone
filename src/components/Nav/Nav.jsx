@@ -32,22 +32,22 @@ export default function Nav() {
               </a>
             </li>
             <li className="nav__content__anchors__anchor">
-              <a href="#Diapo" className="nav__content__anchors__link">
+              <a href="#diapo" className="nav__content__anchors__link">
                 Diapo
               </a>
             </li>
             <li className="nav__content__anchors__anchor">
-              <a href="#Projets" className="nav__content__anchors__link">
+              <a href="#projets" className="nav__content__anchors__link">
                 Projets
               </a>
             </li>
             <li className="nav__content__anchors__anchor">
-              <a href="#Histoire" className="nav__content__anchors__link">
+              <a href="#histoire" className="nav__content__anchors__link">
                 Histoire
               </a>
             </li>
             <li className="nav__content__anchors__anchor">
-              <a href="#Contact" className="nav__content__anchors__link">
+              <a href="#contact" className="nav__content__anchors__link">
                 Contact
               </a>
             </li>
