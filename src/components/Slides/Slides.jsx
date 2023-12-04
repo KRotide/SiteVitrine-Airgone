@@ -1,15 +1,11 @@
 import React, { useState } from "react";
 
-import image1 from "../../assets/images/paints/joyeuxChaos.jpg";
-import image2 from "../../assets/images/paints/lEnvie.jpg";
-import image3 from "../../assets/images/paints/brutal.jpg";
+import image1 from "../../assets/images/slides/joyeuxChaos.jpg";
+import image2 from "../../assets/images/slides/lEnvie.jpg";
+import image3 from "../../assets/images/slides/brutal.jpg";
 
 export default function Slides() {
-  const slides = [
-    { src: image1 },
-    { src: image2 },
-    { src: image3 }
-  ];
+  const slides = [{ src: image1 }, { src: image2 }, { src: image3 }];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -18,9 +14,7 @@ export default function Slides() {
   };
 
   const prevSlide = () => {
-    setCurrentIndex(
-      (currentIndex - 1 + slides.length) % slides.length,
-    );
+    setCurrentIndex((currentIndex - 1 + slides.length) % slides.length);
   };
 
   const goToSlide = (index) => {
@@ -28,14 +22,15 @@ export default function Slides() {
   };
 
   return (
-    <section className="slides" id="diapo">
+    <section className="slides" id="slides">
       <h2>Diapo</h2>
       <div className="slides__content">
         {slides.map((image, index) => (
           <div
             key={index}
-            className={`slides__content__image ${index === currentIndex ? "active" : ""
-              }`}
+            className={`slides__content__image ${
+              index === currentIndex ? "active" : ""
+            }`}
           >
             <img src={image.src} alt="" />
           </div>
@@ -44,8 +39,9 @@ export default function Slides() {
           {slides.map((_, index) => (
             <div
               key={index}
-              className={`slides__content__bulletPoints__dot ${index === currentIndex ? "active" : ""
-                }`}
+              className={`slides__content__bulletPoints__dot ${
+                index === currentIndex ? "active" : ""
+              }`}
               onClick={() => goToSlide(index)}
             ></div>
           ))}

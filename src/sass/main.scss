@@ -1,18 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Sedgwick+Ave+Display&display=swap");
+
+@import "../pages/Home.scss";
 
 @import "../components/Header/Header.scss";
 @import "../components/Nav/Nav.scss";
 @import "../components/Banner/Banner.scss";
 
 @import "../components/Slides/Slides.scss";
+@import "../components/Gallery/Gallery.scss";
+@import "../components/Story/Story.scss";
+@import "../components/Contact/Contact.scss";
 
 html,
 body {
   background-color: #f9fafa;
-  color: #20303c;
-  font-family: "Lora", serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-family: 'Luxurious Roman', serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #f9fafa;
   margin: 0;
   padding: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-block-start: 1.5rem;
+  margin-block-end: 1.5rem;
+  font-size: 2em;
 }

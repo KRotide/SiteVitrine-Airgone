@@ -14,7 +14,7 @@ export default function Banner() {
           <img
             className="banner__content__frame"
             src={Frame}
-            alt="Splatter vector"
+            alt="Cadre tâche de peinture"
           />
           <img
             className="banner__content__logo"
